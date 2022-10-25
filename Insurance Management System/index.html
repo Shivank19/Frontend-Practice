@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content=" width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Insurance Management System</title>
+    <link rel="icon" href="./src/images/bg6.jpg" type="image/jpg" > <!-- Image in the tab bar-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/main.css">
+</head>
+
+<body>
+    <div class="container">
+        <form class="form" id="BasicInfo" action="./details.html" >
+            <h1 class="form__title">Profile</h1>
+            <div class="form__message form__message--error"></div> 
+            <div class="form__input-group"> 
+                <label for="fname" class="form__input--label">First Name</label>
+                <input type="text" id="fname" class="form__input" autofocus placeholder="First Name" required>
+                <div class="form__input-error-message"></div>
+            </div>
+            <div class="form__input-group"> 
+                <label for="lname" class="form__input--label">Last Name</label>
+                <input type="text" id="lname" class="form__input" autofocus placeholder="Last Name" required>
+                <div class="form__input-error-message"></div>
+            </div>
+            <div class="form__input-group"> 
+                <label for="dob" class="form__input--label">DOB</label>
+                <input type="date" id="dob" class="form__input" autofocus placeholder="Date of Birth" required>
+                <div class="form__input-error-message"></div>
+            </div>
+            <div class="form__input-group"> 
+                <label for="email" class="form__input--label">Email</label>
+                <input type="email" id="email" class="form__input" autofocus placeholder="Email Address" required>
+                <div class="form__input-error-message"></div>
+            </div>
+            <div class="form__input-group"> 
+                <label for="mob" class="form__input--label">Mobile</label>
+                <input type="tel" id="mob" class="form__input" autofocus placeholder="Mobile Number" pattern="[0-9]{10}" required>
+                <div class="form__input-error-message"></div>
+            </div>
+            <div class="form__input-group"> 
+                <label for="add" class="form__input--label">Permanant Address</label>
+                <input type="text" id="add" class="form__input" autofocus placeholder="Permanant Address">
+                <div class="form__input-error-message"></div>
+            </div>
+            <div class="form__input-group"> 
+                <label for="pwd" class="form__input--label">Password</label>
+                <input type="password" id="pwd" class="form__input" autofocus placeholder="Password" required>
+                <div class="form__input-error-message"></div>
+            </div>
+            <div class="form__input-group"> 
+                <label for="confpwd" class="form__input--label">Confirm Password</label>
+                <input type="password" id="confpwd" class="form__input" autofocus placeholder="Confirm Password" required>
+                <div class="form__input-error-message"></div>
+            </div>
+    
+            <h1 class="form__title">Insurance Details</h1>
+            <div class="form__message form__message--error"></div> 
+            <div class="form__input-group"> 
+                <label for="Policy" class="form__input--label">Policy Number</label>
+                <input type="text" id="polno" class="form__input" autofocus placeholder="Policy Number" required>
+                <div class="form__input-error-message"></div>
+            </div>
+            <div class="form__input-group"> 
+                <label for="pa" class="form__input--label">Annual Premium Amount (PA)</label>
+                <input type="number" id="pa" class="form__input" autofocus placeholder="Annual Premium Amount (PA)" required>
+                <div id="error" class="form__input-error-message"></div>
+            </div>
+            <div class="form__input-group"> 
+                <label for="ma" class="form__input--label">Maturity Amount (MA)</label>
+                <input type="number" id="ma" class="form__input" autofocus placeholder="Maturity Amount (MA)" required>
+                <div class="form__input-error-message"></div>
+            </div>
+            <div class="form__input-group"> 
+                <label for="materm" class="form__input--label">Maturity Term</label>
+                <input type="number" id="materm" class="form__input" autofocus placeholder="Maturity Term">
+                <div class="form__input-error-message"></div>
+            </div>
+            <button class="form__button" type="submit" onclick="onSubmit()">Proceed</button>
+        </form>
+    </div>
+    <script src="./src/main.js"></script>
+</body>
